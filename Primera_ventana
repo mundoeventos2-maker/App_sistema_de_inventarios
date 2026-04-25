@@ -149,3 +149,580 @@ Aquí tienes el código HTML completo:
 </body>
 </html>
 
+
+
+
+// Este es el segundo codigo html de la segunda ventana de la app de sistema de inventarios //
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP SISTEMA DE INVENTARIOS - Registro</title>
+    <style>
+        /* Fondo de la página web en BLANCO PURO */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; 
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Pantalla del teléfono con fondo AZUL OSCURO original */
+        .screen {
+            width: 360px;
+            height: 720px;
+            background: linear-gradient(180deg, #0d2a45 0%, #030a15 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 30px;
+            border: 4px solid #333;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            position: relative;
+            overflow-y: auto; /* Permite scroll si hay muchos campos */
+        }
+
+        /* Título de la APP */
+        .app-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        /* Icono de usuario turquesa */
+        .top-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #2daab8;
+            mask: url('https://cdn-icons-png.flaticon.com/512/1077/1077114.png') no-repeat center;
+            -webkit-mask: url('https://cdn-icons-png.flaticon.com/512/1077/1077114.png') no-repeat center;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            margin-bottom: 10px;
+        }
+
+        /* Círculo con iniciales CG */
+        .avatar-circle {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .avatar-circle span {
+            color: #0d1b2a;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        /* Contenedor del Formulario */
+        .form-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Estilo de los campos de entrada (Inputs) */
+        .input-group {
+            border: 1.5px solid #2daab8;
+            border-radius: 5px;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.05);
+            text-align: center;
+        }
+
+        .input-label {
+            display: block;
+            color: #ffffff;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .input-field {
+            width: 100%;
+            background: transparent;
+            border: none;
+            color: #2daab8;
+            text-align: center;
+            font-size: 13px;
+            outline: none;
+        }
+
+        .input-field::placeholder {
+            color: #2daab8;
+            opacity: 0.7;
+        }
+
+        /* Botón Aceptar */
+        .btn-aceptar {
+            margin-top: 20px;
+            background: transparent;
+            border: 1.5px solid #2daab8;
+            color: #2daab8;
+            padding: 10px 40px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            align-self: center;
+            transition: 0.3s;
+        }
+
+        .btn-aceptar:hover {
+            background: rgba(45, 170, 184, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="screen">
+        <div class="app-title">APP SISTEMA DE INVENTARIOS</div>
+        
+        <div class="top-icon"></div>
+
+        <div class="avatar-circle">
+            <span>CG</span>
+        </div>
+
+        <form class="form-container">
+            <div class="input-group">
+                <span class="input-label">Tipo de documento</span>
+                <input type="text" class="input-field" placeholder="CC, CE, PAS, etc.">
+            </div>
+
+            <div class="input-group">
+                <span class="input-label">Número de documento</span>
+                <input type="number" class="input-field" placeholder="Ingrese su número">
+            </div>
+
+            <div class="input-group">
+                <span class="input-label">Nombres</span>
+                <input type="text" class="input-field" placeholder="Sus nombres completos">
+            </div>
+
+            <div class="input-group">
+                <span class="input-label">Apellidos</span>
+                <input type="text" class="input-field" placeholder="Sus apellidos completos">
+            </div>
+
+            <div class="input-group">
+                <span class="input-label">Celular</span>
+                <input type="tel" class="input-field" placeholder="Número de celular">
+            </div>
+
+            <div class="input-group">
+                <span class="input-label">Correo electrónico</span>
+                <input type="email" class="input-field" placeholder="Ejemplo: correo@ejemplo.com">
+            </div>
+
+            <button type="button" class="btn-aceptar">Aceptar</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+
+// Esta es la tercera ventana del app del sistema de inventarios //
+
+Entendido. He realizado el ajuste para aislar el celular: ahora verás la pantalla del teléfono con el fondo azul oscuro original, pero todo el fondo de la página web será blanco puro.
+He mantenido el título que pediste ("APP SISTEMA DE INVENTARIOS") y las iniciales de usuario actualizadas ("CG").
+Aquí tienes el código HTML completo:
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP SISTEMA DE INVENTARIOS - Registro</title>
+    <style>
+        /* Fondo de la página web en BLANCO */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; 
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Pantalla del teléfono con fondo AZUL OSCURO original */
+        .screen {
+            width: 360px;
+            height: 740px;
+            background: linear-gradient(180deg, #0d2a45 0%, #030a15 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+            box-sizing: border-box;
+            border-radius: 35px;
+            border: 4px solid #333;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+            color: #ffffff;
+        }
+
+        /* Título BIENVENIDO con efecto de resplandor (Glow) */
+        .welcome-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2daab8;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px rgba(45, 170, 184, 0.7), 0 0 20px rgba(45, 170, 184, 0.5);
+            letter-spacing: 1px;
+        }
+
+        /* Texto descriptivo */
+        .instruction-text {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.4;
+            color: #e0e0e0;
+            padding: 0 10px;
+        }
+
+        /* Bloque de requisitos de contraseña */
+        .requirements-container {
+            align-self: flex-start;
+            font-size: 13.5px;
+            margin-bottom: 25px;
+            color: #ffffff;
+            padding-left: 15px;
+            line-height: 1.5;
+        }
+
+        /* Formulario */
+        .form-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Estilo de los campos de entrada */
+        .input-group {
+            border: 1.5px solid #2daab8;
+            border-radius: 6px;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.03);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-label {
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 2px;
+        }
+
+        .input-field {
+            width: 90%;
+            background: transparent;
+            border: none;
+            color: #2daab8;
+            text-align: center;
+            font-size: 13px;
+            outline: none;
+        }
+
+        .input-field::placeholder {
+            color: #2daab8;
+            opacity: 0.6;
+        }
+
+        /* Icono de ojo a la derecha */
+        .eye-icon {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            border: 1.5px solid #2daab8;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .eye-icon::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background-color: #2daab8;
+            border-radius: 50%;
+        }
+
+        /* Botón Continuar */
+        .btn-continue {
+            margin-top: 30px;
+            background: transparent;
+            border: 1.5px solid #2daab8;
+            color: #2daab8;
+            padding: 10px 55px;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            align-self: center;
+            transition: 0.3s;
+        }
+
+        .btn-continue:hover {
+            background: rgba(45, 170, 184, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="screen">
+        <div class="welcome-title">BIENVENIDO</div>
+        
+        <div class="instruction-text">
+            Por favor, ingresa tu cédula como usuario y crea una contraseña.
+        </div>
+
+        <div class="requirements-container">
+            Requisitos de la contraseña:<br>
+            • Mínimo 8 dígitos.<br>
+            • Primera letra MAYÚSCULA.<br>
+            • Mínimo una minúscula.<br>
+            • Debe contener números.
+        </div>
+
+        <form class="form-container">
+            <div class="input-group">
+                <span class="input-label">Cédula (Usuario)</span>
+                <input type="text" class="input-field" placeholder="Ingresa tu número de cédula">
+                <div class="eye-icon"></div>
+            </div>
+
+            <div class="input-group">
+                <span class="input-label">Contraseña</span>
+                <input type="password" class="input-field" placeholder="Ejemplo: Ab123456">
+                <div class="eye-icon"></div>
+            </div>
+
+            <div class="input-group">
+                <span class="input-label">Confirmar contraseña</span>
+                <input type="password" class="input-field" placeholder="Repite tu contraseña">
+                <div class="eye-icon"></div>
+            </div>
+
+            <div class="input-group">
+                <span class="input-label">Confirmar contraseña</span>
+                <input type="password" class="input-field" placeholder="Repite tu contraseña">
+                <div class="eye-icon"></div>
+            </div>
+
+            <button type="button" class="btn-continue">Continuar</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+
+// esta es la cuarta ventana de la app del sistema de inventarios //
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP SISTEMA DE INVENTARIOS - Login</title>
+    <style>
+        /* Fondo de la página web en BLANCO PURO */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Pantalla del teléfono con fondo AZUL OSCURO original */
+        .screen {
+            width: 360px;
+            height: 740px;
+            background: linear-gradient(180deg, #0d2a45 0%, #030a15 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 25px;
+            box-sizing: border-box;
+            border-radius: 35px;
+            border: 4px solid #333;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            position: relative;
+            color: #ffffff;
+        }
+
+        /* Título BIENVENIDO con Glow */
+        .welcome-title {
+            font-size: 30px;
+            font-weight: bold;
+            color: #2daab8;
+            text-align: center;
+            margin-top: 20px;
+            text-shadow: 0 0 15px rgba(45, 170, 184, 0.8);
+            letter-spacing: 1px;
+        }
+
+        /* Nombre del Usuario con Glow */
+        .user-name {
+            font-size: 24px;
+            font-weight: 500;
+            color: #2daab8;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px rgba(45, 170, 184, 0.6);
+            line-height: 1.2;
+        }
+
+        /* Texto de instrucción */
+        .instruction {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #e0e0e0;
+        }
+
+        /* Formulario */
+        .form-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Campos de entrada */
+        .input-group {
+            border: 1.5px solid #2daab8;
+            border-radius: 6px;
+            padding: 10px 12px;
+            background: rgba(255, 255, 255, 0.03);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-label {
+            font-size: 15px;
+            color: #ffffff;
+            margin-bottom: 2px;
+        }
+
+        .input-field {
+            width: 100%;
+            background: transparent;
+            border: none;
+            color: #2daab8;
+            text-align: center;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .input-field::placeholder {
+            color: #2daab8;
+            opacity: 0.6;
+        }
+
+        /* Icono de ojo */
+        .eye-icon {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        /* Botón Continuar */
+        .btn-continue {
+            margin-top: 40px;
+            background: transparent;
+            border: 1.5px solid #2daab8;
+            color: #2daab8;
+            padding: 12px 60px;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            align-self: center;
+            transition: 0.3s;
+        }
+
+        .btn-continue:hover {
+            background: rgba(45, 170, 184, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="screen">
+        <div class="welcome-title">BIENVENIDO</div>
+        
+        <div class="user-name">
+            Cristian Edinson<br>Garcia Guzman
+        </div>
+
+        <div class="instruction">
+            Inicia sesión con tus credenciales.
+        </div>
+
+        <form class="form-container">
+            <div class="input-group">
+                <span class="input-label">Usuario</span>
+                <input type="text" class="input-field" placeholder="Ingresa tu número de usuario">
+                <div class="eye-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2daab8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <span class="input-label">Contraseña</span>
+                <input type="password" class="input-field" placeholder="Ingresa tu contraseña">
+                <div class="eye-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2daab8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </div>
+            </div>
+
+            <button type="button" class="btn-continue">Continuar</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
